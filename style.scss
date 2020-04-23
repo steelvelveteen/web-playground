@@ -1,10 +1,129 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-    background-color: pink;
-    text-align: center;
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center; // vertical alignment
+  justify-content: center; // horizontal alignment
+  color: #555;
+  background: #ecf0f3;
+
+  .login-container {
+    width: 430px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+
+    .logo {
+      background: url("./firebase-logo.png");
+      background-size: 100px 100px;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+
+    .title {
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05rem;
+      text-align: center;
+    }
+    .sub-title {
+      text-align: center;
+      letter-spacing: 0.7rem;
+    }
+
+    .title,
+    .sub-title {
+      text-shadow: inset 2px 2px 5px #0687c7;
+    }
+
+    .fields {
+      width: 100%;
+      padding: 75px 5px 5px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .username,
+      .password {
+        margin-bottom: 30px;
+        border-radius: 25px;
+        // box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+
+        box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff,
+        0px 0px 8px #cbced1, -8px -8px 8px #ffffff;
+
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+
+        .fa-user,
+        .fa-key {
+          height: 0.9rem;
+          margin: 0 10px 0px 25px;
+          color: #999292;
+        }
+        input {
+          border: none;
+          outline: none;
+          background: none;
+          color: #555;
+          padding: 20px 10px 20px 5px;
+          font-size: 1rem;
+          line-height: 1rem;
+        }
+      }
+
+      .signin-button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+        background: #24cfaa;
+        // box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+        box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff,
+                    inset 0px 0px 8px #b1b1b1, 0px 0px 8px #ffffff;
+
+        transition: 0.5s;
+        
+        &:hover {
+          background: #2fddb6;
+        }
+        &:active {
+          background: #1da88b;
+        }
+      }
+
+      .link {
+        padding-top: 20px;
+        a {
+          text-decoration: none;
+          color: #aaa;
+
+          &:hover {
+            color: #868484;
+          }
+  
+          &:active {
+            color: #525050;
+          }
+        }
+      }
+    }
+  }
 }

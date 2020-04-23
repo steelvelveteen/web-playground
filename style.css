@@ -1,11 +1,157 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-  background-color: pink;
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #555;
+  background: #ecf0f3;
+}
+
+body .login-container {
+  width: 430px;
+  height: 700px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background-color: #ecf0f3;
+  -webkit-box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+          box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+}
+
+body .login-container .logo {
+  background: url("./firebase-logo.png");
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+body .login-container .title {
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05rem;
   text-align: center;
+}
+
+body .login-container .sub-title {
+  text-align: center;
+  letter-spacing: 0.7rem;
+}
+
+body .login-container .title,
+body .login-container .sub-title {
+  text-shadow: inset 2px 2px 5px #0687c7;
+}
+
+body .login-container .fields {
+  width: 100%;
+  padding: 75px 5px 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .login-container .fields .username,
+body .login-container .fields .password {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  -webkit-box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff, 0px 0px 8px #cbced1, -8px -8px 8px #ffffff;
+          box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff, 0px 0px 8px #cbced1, -8px -8px 8px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .login-container .fields .username .fa-user,
+body .login-container .fields .username .fa-key,
+body .login-container .fields .password .fa-user,
+body .login-container .fields .password .fa-key {
+  height: 0.9rem;
+  margin: 0 10px 0px 25px;
+  color: #999292;
+}
+
+body .login-container .fields .username input,
+body .login-container .fields .password input {
+  border: none;
+  outline: none;
+  background: none;
+  color: #555;
+  padding: 20px 10px 20px 5px;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+body .login-container .fields .signin-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #24cfaa;
+  -webkit-box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff, inset 0px 0px 8px #b1b1b1, 0px 0px 8px #ffffff;
+          box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff, inset 0px 0px 8px #b1b1b1, 0px 0px 8px #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .login-container .fields .signin-button:hover {
+  background: #2fddb6;
+}
+
+body .login-container .fields .signin-button:active {
+  background: #1da88b;
+}
+
+body .login-container .fields .link {
+  padding-top: 20px;
+}
+
+body .login-container .fields .link a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+body .login-container .fields .link a:hover {
+  color: #868484;
+}
+
+body .login-container .fields .link a:active {
+  color: #525050;
 }
 /*# sourceMappingURL=style.css.map */
