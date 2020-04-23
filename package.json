@@ -1,0 +1,11 @@
+{
+  "name": "web-playground",
+  "version": "1.0.0",
+  "description": "Flexbox, css, scss, and many more each on their own branch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey",
+  "license": "MIT"
+}
