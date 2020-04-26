@@ -17,9 +17,16 @@ class Lion extends Animal {
     makeSound() {
         console.log("Roooaaargghg");
     }
+
+    makeSoundFromParent() {
+        super.makeSound();
+    }
 }
 
 const genericAnimal = new Animal("Generica animal");
 genericAnimal.makeSound();
 const savanahLion = new Lion("Mufassa");
-savanahLion.makeSound();
+savanahLion.makeSound(); // Calls its own makeSound method
+
+// How to call its parent's makeSound method??
+savanahLion.makeSoundFromParent();
