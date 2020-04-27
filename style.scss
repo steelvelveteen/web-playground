@@ -1,10 +1,23 @@
 * {
-    margin: 0;
+    // margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
 }
 
-h1 {
-    background-color: pink;
-    text-align: center;
+.container > div {
+    background: #eee;
+    padding: 1rem;
+    &:nth-child(odd) {
+        background: #ddd;
+    }
+}
+
+.container {
+    // The grid tutorial
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    // grid-gap: 1rem;
 }
