@@ -1,10 +1,56 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-    background-color: pink;
-    text-align: center;
+.container {
+    height: 100vh;
+    border: 20px solid black;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+    .child1 {
+        width: 200px;
+        height: 200px;
+        background: rgb(39, 61, 134);
+    }
+
+    .child2 {
+        width: 200px;
+        height: 200px;
+        background: rgb(172, 57, 53);
+        // flex-grow: 2;
+        // flex-basis: 45%;
+        flex: 2  0 auto; // combines flex-grow flex-shring and flex-basis in one. Recommended.
+    }
+
+    .child3 {
+        width: 200px;
+        height: 200px;
+        background: rgb(149, 43, 140);
+        // flex-grow: 1; 
+        /// Adds all available horizontal space (because we are in row mode) and add that space to child3
+    }
+
+
+    // .child4 {
+    //     width: 200px;
+    //     height: 200px;
+    //     background: rgb(243, 176, 88);
+    //     order: 3;
+    // }
+
+    .child1, .child2, .child3, .child4 {
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

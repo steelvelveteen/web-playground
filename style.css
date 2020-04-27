@@ -1,11 +1,60 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  background-color: pink;
-  text-align: center;
+.container {
+  height: 100vh;
+  border: 20px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .child1 {
+  width: 200px;
+  height: 200px;
+  background: #273d86;
+}
+
+.container .child2 {
+  width: 200px;
+  height: 200px;
+  background: #ac3935;
+  -webkit-box-flex: 2;
+      -ms-flex: 2  0 auto;
+          flex: 2  0 auto;
+}
+
+.container .child3 {
+  width: 200px;
+  height: 200px;
+  background: #952b8c;
+}
+
+.container .child1, .container .child2, .container .child3, .container .child4 {
+  color: white;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
