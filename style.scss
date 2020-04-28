@@ -1,10 +1,134 @@
+$text-primary: #b6b6b6;
+$text-secondary: #ececec;
+$bg-primary: #23232e;
+$bg-secondary: #141418;
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-    background-color: pink;
+body {
+  color: black;
+  background-color: #fff;
+
+  &::-webkit-scrollbar {
+    width: 0.45rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    // background-color: #1e1e24;
+    background-color: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #6649b8;
+    border-radius: 1.5rem;
+  }
+
+  main {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+
+  .navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: $bg-primary;
+    transition: width 200ms ease;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item:last-child {
+    margin-top: auto;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: $text-primary;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 600ms;
+
+    &:hover {
+      filter: grayscale(0%) opacity(1);
+      background-color: $bg-secondary;
+      color: $text-secondary;
+    }
+  }
+
+  .link-text {
+    display: none;
+    margin-left: 1rem;
+  }
+
+  .nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: block;
+  }
+
+  .fa-primary {
+    color: #ff7eee;
+  }
+
+  .fa-secondary {
+    color: #df49a6;
+  }
+
+  .fa-primary,
+  .fa-secondary {
+    transition: 600ms;
+  }
+
+  .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 1rem;
     text-align: center;
+    font-size: 1.5rem;
+    color: $text-secondary;
+    background-color: $bg-secondary;
+    letter-spacing: 0.3rem;
+
+    svg {
+      transform: rotate(0deg);
+      transition: ease-in-out 600ms;
+    }
+    
+  }
+  .navbar:hover {
+    .logo {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
 }

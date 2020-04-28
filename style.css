@@ -1,11 +1,144 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1 {
-  background-color: pink;
+body {
+  color: black;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 0.45rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6649b8;
+  border-radius: 1.5rem;
+}
+
+body main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+body .navbar {
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #23232e;
+  -webkit-transition: width 200ms ease;
+  transition: width 200ms ease;
+}
+
+body .navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+body .nav-item {
+  width: 100%;
+}
+
+body .nav-item:last-child {
+  margin-top: auto;
+}
+
+body .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  color: #b6b6b6;
+  text-decoration: none;
+  -webkit-filter: grayscale(100%) opacity(0.7);
+          filter: grayscale(100%) opacity(0.7);
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+body .nav-link:hover {
+  -webkit-filter: grayscale(0%) opacity(1);
+          filter: grayscale(0%) opacity(1);
+  background-color: #141418;
+  color: #ececec;
+}
+
+body .link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+body .nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+body .navbar:hover {
+  width: 16rem;
+}
+
+body .navbar:hover .link-text {
+  display: block;
+}
+
+body .fa-primary {
+  color: #ff7eee;
+}
+
+body .fa-secondary {
+  color: #df49a6;
+}
+
+body .fa-primary,
+body .fa-secondary {
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+
+body .logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 1rem;
   text-align: center;
+  font-size: 1.5rem;
+  color: #ececec;
+  background-color: #141418;
+  letter-spacing: 0.3rem;
+}
+
+body .logo svg {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: ease-in-out 600ms;
+  transition: ease-in-out 600ms;
+}
+
+body .navbar:hover .logo svg {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 /*# sourceMappingURL=style.css.map */
