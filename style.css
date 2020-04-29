@@ -3,50 +3,58 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.description {
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+  padding: 2rem;
+  background: #fdd4a6;
 }
 
 .container {
+  margin-bottom: 2rem;
   height: 100vh;
   border: 20px solid black;
+}
+
+.container .parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.container .child1 {
-  width: 200px;
-  height: 200px;
+.container .parent div {
+  min-width: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .parent .child1 {
   background: #273d86;
 }
 
-.container .child2 {
-  width: 200px;
-  height: 200px;
+.container .parent .child2 {
   background: #ac3935;
-  -webkit-box-flex: 2;
-      -ms-flex: 2  0 auto;
-          flex: 2  0 auto;
 }
 
-.container .child3 {
-  width: 200px;
-  height: 200px;
+.container .parent .child3 {
   background: #952b8c;
 }
 
-.container .child1, .container .child2, .container .child3, .container .child4 {
+.container .parent .child4 {
+  background: #bb7a31;
+}
+
+.container .child1,
+.container .child2,
+.container .child3,
+.container .child4 {
   color: white;
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
