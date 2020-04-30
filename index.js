@@ -36,9 +36,15 @@ getUserVideos = (email) => {
 
 //Async and await
  displayUser = async() => {
-    const loggedInUser = await loginUser('joeyvico@gmail.com', 68989);
-    const videos = await getUserVideos(loggedInUser.useremail);
-    console.log(videos);
+     try {
+        const loggedInUser = await loginUser('joeyvico@gmail.com', 68989);
+        const videos = await getUserVideos(loggedInUser.useremail);
+        console.log(videos);
+     } 
+     catch (err) {
+         console.error('Something went wrong: ' + err);
+     }
+    
 }
 
 displayUser();
