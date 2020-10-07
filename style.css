@@ -1,68 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-.description {
-  -ms-flex-negative: 3;
-      flex-shrink: 3;
-  padding: 2rem;
-  background: #fdd4a6;
-}
-
 .container {
-  margin-bottom: 2rem;
-  height: 100vh;
-  border: 20px solid black;
-}
-
-.container .parent {
+  background-color: pink;
+  height: 50vh;
+  width: 50vw;
+  padding: 0.5em;
+  margin: 25vh auto 0;
+  /* flex section tutorial - container properties */
+  /* -------------------------------------------- */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.container .parent div {
-  min-width: 200px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.container .parent .child1 {
-  background: #273d86;
-}
-
-.container .parent .child2 {
-  background: #ac3935;
-}
-
-.container .parent .child3 {
-  background: #952b8c;
-}
-
-.container .parent .child4 {
-  background: #bb7a31;
-}
-
-.container .child1,
-.container .child2,
-.container .child3,
-.container .child4 {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .item {
+  background-color: lightblue;
+  margin: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */
