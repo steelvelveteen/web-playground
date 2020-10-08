@@ -95,6 +95,7 @@ h2 {
 .cta .cta-text {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding: 0 2rem;
 }
 
 @media (min-width: 40rem) {
