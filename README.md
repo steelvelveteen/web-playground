@@ -1,6 +1,6 @@
 <div align="center">
   
-  # master branch
+  # Web Designs | Javascript Tutorials | Exercises  
   ##  Tutorials and exercises where I explore and practice Javascript features
 
 </div>
