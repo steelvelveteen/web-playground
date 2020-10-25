@@ -16,17 +16,20 @@
 030 - Flexbox  
 040 - CSS Grids  
 050 - OOP in Javascript  
-060 - Neuromorph Login Exercise  
-070 - Promises  
-080 - Spread and rest operators  
-090 - Destructuring objects  
-100 - Classes inheritance  
-110 - Polymorphism  
-120 - Async / Await  
-130 - Callbacks vs Promises  
-140 - Fireship Navbar Exercise  
-150 - Bind Call and Apply  
-160 - DOM  
-170 - Flexbox Layout Exercise  
-180 - Media queries list  
+060 - Promises  
+070 - Spread and rest operators  
+080 - Destructuring objects  
+900 - Classes inheritance  
+100 - Polymorphism  
+110 - Async / Await  
+120 - Callbacks vs Promises  
+130 - Bind Call and Apply  
+140 - DOM  
+150 - Media queries list  
+
+##### Exercises  
+200 - Neuromorph Login Exercise  
+210 - Fireship Navbar Exercise  
+220 - Flexbox Layout Exercise  
+
 
