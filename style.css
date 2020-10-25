@@ -94,9 +94,9 @@ body .login-container .fields .password {
 }
 
 body .login-container .fields .username .fa-user,
-body .login-container .fields .username .fa-key,
+body .login-container .fields .username .fa-lock,
 body .login-container .fields .password .fa-user,
-body .login-container .fields .password .fa-key {
+body .login-container .fields .password .fa-lock {
   height: 0.9rem;
   margin: 0 10px 0px 25px;
   color: #999292;
