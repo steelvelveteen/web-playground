@@ -1,16 +1,13 @@
-<div align="center">
-  
-  # Web Designs | Javascript | CSS Tutorials | Exercises  
-  ##  Tutorials and exercises where I explore and practice Javascript features
+# Web Designs | Javascript | CSS Tutorials | Exercises
 
-</div>
+## Tutorials and exercises where I explore and practice Javascript features
 
- ### How to run  
- Enable Live Sass Compiler if it's not already from VSCode extension,   
- hit the button on the task bar and then hit Go Live (Live Server extension needs to be installed as well)   
- 
- ### Branches  
- 
+### How to run
+
+ Enable Live Sass Compiler if it's not already from VSCode extension, hit the button on the task bar and then hit Go Live (Live Server extension needs to be installed as well)
+
+### Branches  
+
 010 - Arrays intro  
 020 - Arrays Part two  
 030 - Flexbox  
@@ -27,9 +24,8 @@
 140 - DOM  
 150 - Media queries list  
 
-##### Exercises  
+#### Exercises
+
 200 - Neuromorph Login Exercise  
 210 - Fireship Navbar Exercise  
 220 - Flexbox Layout Exercise  
-
-
