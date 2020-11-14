@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Follows the example on branch callbacks-vs-promises
 // loginUser(email, password) => getUserVideos(email)
 
