@@ -16,7 +16,7 @@
 060 - Promises  
 070 - Spread and rest operators  
 080 - Destructuring objects  
-900 - Classes inheritance  
+090 - Classes inheritance  
 100 - Polymorphism  
 110 - Async / Await  
 120 - Callbacks vs Promises  
