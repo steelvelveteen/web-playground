@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Create a promise that will handle when things go Ok and when things don't go Ok
 // Unfamiliar with these topics as I am used to Observables in RxJS for angular
 
@@ -71,3 +72,10 @@ Promise.race([
 
 
 
+=======
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Hello Webpack Playground');
+
+});
+
+>>>>>>> master
