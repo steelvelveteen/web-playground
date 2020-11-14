@@ -5,7 +5,38 @@
 }
 
 h1 {
-  background-color: pink;
+  background-color: rgb(227, 10, 247);
+  color: lightgray;
   text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+p {
+  padding-left: 50px;
+  margin: auto;
+}
+.mini-header {
+  padding-left: 25px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.pre {
+  margin: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: red;
+}
+
+article::before {
+  content: attr(data-parent);
+  color: blue;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+p[data-background='greenish'] {
+  width: 600px;
+  background-color: lightgreen;
+  font-size: 2.3rem;
+}

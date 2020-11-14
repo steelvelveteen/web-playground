@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Web tech playground</title>
 </head>
+
 <body>
     <h1>Web Tech Playground</h1>
+    <div>
+        <p>data attributes enables you to store extra information that doesn't have
+            any visual representation. data-*
+        </p>
+    </div>
+
+    <article id="electric-cars" data-columns="3" data-index-number="1343" data-parent="cars">
+    </article>
+    <div class="mini-header">Javascript access</div>
+    <p>To read them in javascript use getAttribute() or via the dataset object</p>
+    <p>'const article = document.querySelector('#electric-cars')'</p>
+    <p>and then article.dataset.columns will give the stored value</p>
+    <p>You can set the data value from the javascript as above</p>
+
+    <div class="mini-header">Css access</div>
+    <p>As attributes they are they can be accessed from CSS</p>
+    <pre class="pre">
+        article:before {
+            content: attr(data-parent);
+        }
+    </pre>
+    <p data-background='greenish'>Greenish example</p>
 
 
     <script defer src="index.js"></script>
 </body>
+
 </html>
