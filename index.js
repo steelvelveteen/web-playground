@@ -30,3 +30,4 @@ savanahLion.makeSound(); // Calls its own makeSound method
 
 // How to call its parent's makeSound method??
 savanahLion.makeSoundFromParent();
+
