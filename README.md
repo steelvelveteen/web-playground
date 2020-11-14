@@ -23,6 +23,7 @@
 130 - Bind Call and Apply  
 140 - DOM  
 150 - Media queries list  
+160 - Data attributes HTML  
 
 #### Exercises
 
