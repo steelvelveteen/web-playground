@@ -1,4 +1,128 @@
-* {
+body {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin: 1.5rem;
+}
+
+.btn:hover {
+  background: #EAEAEA;
+  color: #333;
+}
+
+/* Header Showcase */
+#showcase {
+  min-height: 550px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333 url("./images/pexels-luis.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#showcase h1 {
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap {
+  padding: 0 1.5rem;
+}
+
+#section-a {
+  background-color: #EAEAEA;
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+#section-a .content-wrap {
+  padding: 0 1.5rem;
+}
+
+#section-b {
+  padding: 2rem 1rem 1rem;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b ul li {
+  margin-bottom: 1rem;
+  background-color: #FFF;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Section C */
+#section-c {
+  background-color: #fff;
+  color: #333;
+  padding: 2rem;
+}
+
+#section-d .box {
+  padding: 2rem;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  background-color: #2690D4;
+}
+
+#main-footer {
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #2690D4;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
