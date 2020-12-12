@@ -26,6 +26,15 @@ p {
   font-size: 20px;
 }
 
+.bg1 {
+  background: url("https://i.ibb.co/dBLbrRV/bg1.jpg");
+}
+
+.bg2 {
+  background: url("https://i.ibb.co/Fb5jb3J/bg2.jpg");
+  color: #333;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -65,14 +74,5 @@ p {
   opacity: 0.7;
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
-}
-
-.bg1 {
-  background: url("https://i.ibb.co/dBLbrRV/bg1.jpg");
-}
-
-.bg2 {
-  background: url("https://i.ibb.co/Fb5jb3J/bg2.jpg");
-  color: #333;
 }
 /*# sourceMappingURL=style.css.map */
