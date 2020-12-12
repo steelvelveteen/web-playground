@@ -37,11 +37,13 @@ p {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 10px;
 
-    .card-wide {
-        grid-column: span 2 / auto;
+    @media screen and (min-width: 760px) {
+        .card-wide {
+            grid-column: span 2 / auto;
+        }
     }
 }
 
@@ -64,4 +66,3 @@ p {
         transform: scale(0.98);
     }
 }
-
