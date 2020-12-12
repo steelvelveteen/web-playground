@@ -119,3 +119,10 @@ p {
         text-decoration: none;
     }
 }
+
+/* Media Queries */
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+    }
+}

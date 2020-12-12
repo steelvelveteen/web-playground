@@ -125,4 +125,12 @@ p {
   color: #2690D4;
   text-decoration: none;
 }
+
+/* Media Queries */
+@media (min-width: 700px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+  }
+}
 /*# sourceMappingURL=style.css.map */
