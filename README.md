@@ -32,3 +32,4 @@
 210 - Fireship Navbar Exercise  
 220 - Flexbox Layout Exercise  
 230 - CSS Grid Responsive Layout website exercise  
+240 - CSS Grid Layout with expanding images  
