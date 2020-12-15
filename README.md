@@ -33,3 +33,5 @@
 220 - Flexbox Layout Exercise  
 230 - CSS Grid Responsive Layout website exercise  
 240 - CSS Grid Layout with expanding images  
+250 - CSS Grid Photo Gallery Firebase  
+260 - Microsoft Website clone  
