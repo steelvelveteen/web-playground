@@ -192,9 +192,50 @@ body {
     .links-inner {
         max-width: 1100px;
         margin: 0 auto;
+        padding: 0 20px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
         justify-content: center;
+        align-items: flex-start;
+
+        li {
+            line-height: 2.8;
+        }
+    }
+}
+
+.footer {
+    background-color: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+
+    .footer-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+
+        div {
+            width: 20%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            i {
+                margin-right: 10px;
+            }
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-right: 30px;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
