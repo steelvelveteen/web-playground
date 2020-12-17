@@ -180,7 +180,7 @@ body {
             padding: 0px 10px;
         }
     }
-}
+} /* End of container div */
 
 /* Links : links > links-inner > ul > li > a */
 .links {
@@ -203,7 +203,7 @@ body {
             line-height: 2.8;
         }
     }
-}
+} /* End of links container */
 
 .footer {
     background-color: #f2f2f2;
@@ -237,5 +237,93 @@ body {
                 margin-bottom: 20px;
             }
         }
+    }
+} /* End of footer container div */
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    z-index: 9;
+    display: none;
+    transition: 250ms ease-in;
+    &:hover {
+        opacity: 0.8;
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .container .main-nav .main-menu {
+        font-size: 14px;;
+        display: block;
+        margin: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 100vh;
+        padding: 30px 50px;
+        background-color: #f2f2f2;
+        opacity: 0.9;
+        transform: translateX(-350px);
+        border-right: #ccc 1px solid;
+        transition: transform 400ms ease-in-out;
+
+        &.show {
+            transform: translateX(-20px);
+        }
+
+        li {
+            border-bottom: 1px solid #b6b4b4;
+            padding: 10px 0;
+
+            &:last-child {
+                border: 0;
+            }
+
+            a:hover {
+                border: none;
+                color: darken( #262626, 20%)
+            }
+
+        }
+    }
+
+    .container .main-nav .right-menu {
+        margin-right: 50px;
+    }
+
+    .container .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container .xbox .content p {
+        display: none;
+    }
+
+    .container .xbox .content .btn {
+        margin-top: 40px;
+    }
+
+    .links .links-inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container .carbon-dark .content {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container .home-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links .links-inner {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
