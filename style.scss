@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-$text-color: #333;
-$blue-bg: #047aed;
+@import "utilities";
 
 * {
     margin: 0;
@@ -39,61 +38,6 @@ img {
     width: 100%;
 }
 
-/* Utilities */
-.container {
-    max-width: 1100px;
-    overflow: auto;
-    margin: 0 auto;
-    padding: 0 40px;
-
-    &.flex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    &.grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        align-items: center;
-        height: 100%;
-    }
-
-    .card {
-        border-radius: 10px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        margin: 20px;
-        color: $text-color;
-        background-color: #fff;
-    }
-}
-
-.btn {
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 5px;
-    background-color: $blue-bg;
-    color: #fff;
-
-    &:hover {
-        transform: scale(0.98);
-    }
-    &:active {
-        background-color: darken($blue-bg, 10%);
-    }
-    &.btn-outline {
-        background-color: transparent;
-        border: 1px #fff solid;
-        color: #fff;
-    }
-}
 /* Navbar */
 .navbar {
     background-color: $blue-bg;
@@ -124,7 +68,7 @@ img {
     color: #fff;
     position: relative;
 
-    // &::before,
+    &::before,
     &::after {
         content: "";
         position: absolute;
@@ -172,5 +116,44 @@ img {
             font-size: 16px;
             outline: none;
         }
+    }
+}
+
+/* Stats */
+.stats {
+    padding-top: 120px;
+    .stats-heading {
+        max-width: 500px;
+        margin: auto;
+    }
+    h3 {
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        // color: $blue-bg;
+    }
+}
+
+/* Cli */
+.cli {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        img {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    }
+}
+
+/* Cloud */
+.cloud {
+    width: 100%;
+    margin: 0 auto;
+    .grid {
+        grid-template-columns: 4fr 3fr;
     }
 }
