@@ -115,6 +115,14 @@ $light-color: #f4f4f4;
     background-color: $dark-color;
     color: #fff;
 }
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+}
+
 .lead {
     font-size: 1.5rem;
 }
