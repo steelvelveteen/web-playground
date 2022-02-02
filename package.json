@@ -4,7 +4,11 @@
   "description": "Flexbox, css, scss, and many more each on their own branch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src/**/*.ts{,x}",
+    "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
+    "clean": "rm -rf node_modules/ && rm -rf package-lock.json",
+    "install:clean": "npm run clean && npm install"
   },
   "author": "Joey",
   "license": "MIT"
