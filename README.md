@@ -4,9 +4,9 @@
 
 ### How to run
 
- Enable Live Sass Compiler if it's not already from VSCode extension, hit the button on the task bar and then hit Go Live (Live Server extension needs to be installed as well)
+Enable Live Sass Compiler if it's not already from VSCode extension, hit the button on the task bar and then hit Go Live (Live Server extension needs to be installed as well)
 
-### Branches  
+### Branches
 
 010 - Arrays intro  
 020 - Arrays Part two  
@@ -16,16 +16,16 @@
 060 - Promises  
 070 - Spread and rest operators  
 080 - Destructuring objects  
-900 - Classes inheritance  
+090 - Classes inheritance  
 100 - Polymorphism  
 110 - Async / Await  
 120 - Callbacks vs Promises  
 130 - Bind Call and Apply  
 140 - DOM  
-150 - Media queries list  
+150 - Media queries list
 
 #### Exercises
 
 200 - Neuromorph Login Exercise  
 210 - Fireship Navbar Exercise  
-220 - Flexbox Layout Exercise  
+220 - Flexbox Layout Exercise
